@@ -1,20 +1,5 @@
 # suicide-attempt-prediction
 
----
-layout: post
-title:  "Suicide-Attempt-Prediction"
-date:   2019-02-22
-excerpt: "A project to predict suicide attempt based on data from reddit survey."
-project: true
-tag:
-- python 
-- colabnotebook
-- suicide
-- machinelearning
-- unsupervised machine learning
-comments: true
----
-
 [CLICK HERE: Check out My Colab Notebook in Github Repo]()
 
 ![0](https://storage.googleapis.com/kaggle-datasets-images/1182/2125/cda8fa2e077f32a8d5fdeb78148d0261/dataset-original.jpg)    
@@ -55,67 +40,63 @@ Source: (José Manoel Bertolote and Alexandra Fleischmann, Suicide and psychiatr
 
 ### EDA 
 #### Numerical Variable
-* Age Box Plot
-![1](https://raw.githubusercontent.com/lmei33/lmei33.github.io/master/assets/img/1.png)    
+* What's the distribution of age?
+![2](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/1.png)    
 
-* Attrition Factors Heatmap
-![2](https://raw.githubusercontent.com/lmei33/lmei33.github.io/master/assets/img/2.png) 
+* How many friends in real life?
+![3](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/2.png) 
 
-* Take a look at the objective factors
-![3](https://raw.githubusercontent.com/lmei33/lmei33.github.io/master/assets/img/3.png) 
+#### Categorical Variable
+* Relationship between educational level and suicide attempt
+![4](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/3.png) 
 
-* Analysis on Monthly Income
-![4](https://raw.githubusercontent.com/lmei33/lmei33.github.io/master/assets/img/4.png) 
-  Break the result by Job Involvement
-![5](https://raw.githubusercontent.com/lmei33/lmei33.github.io/master/assets/img/5.png) 
+* Relationship between body weight and suicide attempt
+![5](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/4.png) 
 
-* Satisfaction
-![6](https://raw.githubusercontent.com/lmei33/lmei33.github.io/master/assets/img/6.png)
+* Relationship between income and suicide attempt
+![6](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/5.png) 
+
+#### Word cloud
+* For people who have attepmted to suicide, what kind of help do they need?
+![7](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/6.png)
+
+* What's the job of people who have attempted to suicide?
+![8](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/7.png)
+
+### Technique for pre-modeling task
+#### 
+1. SMOTE (Synthetic Minority Oversampling Technique): oversampling. deal with the imbalance of suicide and not suicide.
+2. RFE(Recursive Feature Elimination): Test out the features which can give the best model performance.
 
 
-### Model
-After several trials, I chose Logistic Regression
-
+### Modeling
 ---
 
-{% highlight yaml %}
-from sklearn.model_selection import train_test_split
+I used Logistic regression, KNN classifier, Random Forest and did grid search CV on the latter two. 
 
-predictors = IBM_Attrition_Nu.drop(['Attrition'], axis=1)
-target = IBM_Attrition_Nu["Attrition"]
-x_train, x_val, y_train, y_val = train_test_split(predictors, target, test_size = 0.22, random_state = 0)
 
-from sklearn.metrics import accuracy_score
-from sklearn.linear_model import LogisticRegression
+* Model Performance
+![9](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/8.png)
 
-logreg = LogisticRegression()
-logreg.fit(x_train, y_train)
-y_pred = logreg.predict(x_val)
-acc_logreg = round(accuracy_score(y_pred, y_val) * 100, 2)
-print(acc_logreg)
->> 87.35
-{% endhighlight %}
-
----
-
-* Confusion Matrix
-![7](https://raw.githubusercontent.com/lmei33/lmei33.github.io/master/assets/img/7.png)
-
-* Top 6 Influential Factors
-![8](https://raw.githubusercontent.com/lmei33/lmei33.github.io/master/assets/img/8.png)
 
 
 ## Conclusion
-### Based on the influtial factors analysis
-* Don't make them work overtime, they do care!
-* Communicate the vision 
-* Increase employee engagement, especially young employees
-* Enhance recognition and rewards programs - Stock option can be a good choice 
-* Create a pleasant workspace and increase satisfaction
+### About Suicide
+ 
+ Based on the survey, six features have influence on one's intention to suicide:
+ * depressed (2.8929) 
+ * sexuallity_Straight (-2.0080) 
+ * gender_Male （-1.0198）
+ * body weight (0.5365) 
+ * edu_level (-0.3293) 
+ * income (0.1933)
 
-### Since the model still need improvement in predicting attrition...
-* Stay interview...
-   e.g.
-   “What kind of feedback or recognition would you like about your performance that you aren’t currently receiving?”
+### About Modeling
 
-* Survey or interview with employees that decided to leave, identify the things employees care.
+During the process of feature selection and model selection, it's not necessary to find the best one, but a good enough one.
+* The RFE visualizer show that a logistic regression model with 5 features will be the best accurate one. Considering the complexity of suicide, some important information might lose if I only keep 5 features.
+
+### Next step
+
+* Try out different ways to encode categorical variables. (gender_male has negative coefficient obeys the common sense.)
+* Used the important features gotten from this analysis to analyze people's post on twitter or reddit to find out people who tend to suicide and make some intervention.
