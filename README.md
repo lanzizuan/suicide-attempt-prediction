@@ -2,7 +2,7 @@
 
 [CLICK HERE: Check out My Colab Notebook in Github Repo]()
 
-![0](https://storage.googleapis.com/kaggle-datasets-images/1182/2125/cda8fa2e077f32a8d5fdeb78148d0261/dataset-original.jpg)    
+![0](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/dataset-original.png)    
 
 
       
