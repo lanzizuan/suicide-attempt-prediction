@@ -79,7 +79,7 @@ Source: (José Manoel Bertolote and Alexandra Fleischmann, Suicide and psychiatr
 
 ### Technique for pre-modeling task
 ---
-#### 
+ 
 1. SMOTE (Synthetic Minority Oversampling Technique): oversampling. deal with the imbalance of suicide and not suicide.
 2. RFE(Recursive Feature Elimination): Test out the features which can give the best model performance.
 
