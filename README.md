@@ -1,4 +1,4 @@
-# suicide-attempt-prediction
+# Suicide Attempt Prediction
 
 [CLICK HERE: Check out My Colab Notebook in Github Repo](https://github.com/lanzizuan/suicide-attempt-prediction/blob/master/Suicide_Attempt_Prediction.ipynb)
 
