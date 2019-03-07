@@ -1,8 +1,8 @@
 # suicide-attempt-prediction
 
-[CLICK HERE: Check out My Colab Notebook in Github Repo]()
+[CLICK HERE: Check out My Colab Notebook in Github Repo](https://github.com/lanzizuan/suicide-attempt-prediction/blob/master/Suicide_Attempt_Prediction.ipynb)
 
-![10](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/dataset-original.png)    
+ 
 
 
       
@@ -35,6 +35,8 @@ Source: (José Manoel Bertolote and Alexandra Fleischmann, Suicide and psychiatr
 16. What is your job title?	
 17. What is your level of education?	
 18. What have you done to try and improve yourself? (Check all that apply)	
+
+
 
 ## Process  
 ---
@@ -74,11 +76,13 @@ Source: (José Manoel Bertolote and Alexandra Fleischmann, Suicide and psychiatr
 ![8](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/7.png)
 
 
+
 ### Technique for pre-modeling task
 ---
 #### 
 1. SMOTE (Synthetic Minority Oversampling Technique): oversampling. deal with the imbalance of suicide and not suicide.
 2. RFE(Recursive Feature Elimination): Test out the features which can give the best model performance.
+
 
 
 ### Modeling
