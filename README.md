@@ -11,7 +11,7 @@
 As the economy grows and the life quality improves, the happiness, however, doesn't increase accordingly.  According to estimates from the World Health Organisation (WHO), **over 800,000** people die due to suicide every year, which means that someone dies of suicide **every 40 seconds**. Nevertheless, the tragedy can be prevented if being intervened in time.
 
 It's important to predict whether a person has the intention to suicide so that we can take actions if needed. The suicide involves many factors, both personal and societal one.
-In this project, I used data from a survey created by a redditor in the subreddit *ForeverAlone* which collected demographic data and whether people attempted to suicide.
+In this project, I used data from a survey in a subreddit called *ForeverAlone*(https://www.reddit.com/r/ForeverAlone/) which collected demographic data and whether people attempted to suicide.
 
 ![1](https://ourworldindata.org/wp-content/uploads/2016/06/GenderAge-768x481.png)
 Source: (José Manoel Bertolote and Alexandra Fleischmann, Suicide and psychiatric diagnosis: a worldwide perspective. World Psychiatry 1:3, October 2002.
