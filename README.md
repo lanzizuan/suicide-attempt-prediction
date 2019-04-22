@@ -93,6 +93,7 @@ I used Logistic regression, KNN classifier, Random Forest and did grid search CV
 
 
 * Model Performance
+
 ![9](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/8.png)
 
 
