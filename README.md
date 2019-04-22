@@ -14,6 +14,7 @@ It's important to predict whether a person has the intention to suicide so that 
 In this project, I used data from a survey in a subreddit called *ForeverAlone*(https://www.reddit.com/r/ForeverAlone/) which collected demographic data and whether people attempted to suicide.
 
 ![1](https://ourworldindata.org/wp-content/uploads/2016/06/GenderAge-768x481.png)
+
 Source: (José Manoel Bertolote and Alexandra Fleischmann, Suicide and psychiatric diagnosis: a worldwide perspective. World Psychiatry 1:3, October 2002.
 
 #### Survey question
