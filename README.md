@@ -25,26 +25,40 @@ Source: (José Manoel Bertolote and Alexandra Fleischmann, Suicide and psychiatr
 ## Table of Content
 
 1. Ingest
+
  1.1 Import Packages
+
  1.2 Import Dataset
+ 
  1.3 Data Cleaning
+ 
  1.4 Feature Encoding
+
 2. Exploratory Data Analysis
+
 3. Modeling
+
  3.1 Pre-modeling task
+ 
    3.1.1 Split training/test set
+   
    3.1.2 Over-Sampling Using SMOTE(Synthetic Minority Oversampling Technique)
+   
    3.1.3 Feature Selection Using Recursive Feature Elimination (RFE)
+ 
  3.2 Logistic Regression
+ 
  3.3 KNN Classifier
+ 
  3.4 Random Forest
+
 4. Conclusion
  
 
  
  
 
-### Visualization Excerpt 
+## Visualization Excerpt 
 ---
 
 #### Word Cloud
@@ -79,7 +93,7 @@ Observation: Student/engineer/unemployed people are most likely to suicide, prob
  
  Suggestion: When people around you express their depress, you should take care of them because they might face some difficulties and might attempt to suicide while the situation worsens. If your friend is not straight, he/she has higher probability to attempt to suicide than others. Besides, female/over-weight/low educational/high income people are more likely to suicide as well.
  
-### Technique for pre-modeling task
+## Technique Used for Pre-modeling Task
 ---
  
 1. SMOTE (Synthetic Minority Oversampling Technique): Oversampling, deal with the imbalance of classes: attempted to suicide and not attempted to suicide.
