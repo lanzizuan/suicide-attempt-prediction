@@ -63,14 +63,16 @@ Source: (José Manoel Bertolote and Alexandra Fleischmann, Suicide and psychiatr
 
 #### Word Cloud
 
-* For people who have attepmted to suicide, what kind of help do they need?
+* Question: For people who have attepmted to suicide, what kind of help do they need?
 
 ![4](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/6.png)
 
 Observation: When people ask for dating with others, they might feel lonely and the risk of attempting to suicide arises.
 
 
-* What's the job of people who have attempted to suicide?
+
+
+* Question: What's the job of people who have attempted to suicide?
 
 ![5](https://raw.githubusercontent.com/lanzizuan/suicide-attempt-prediction/master/image/7.png)
 
